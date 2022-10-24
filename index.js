@@ -1,4 +1,3 @@
-
 function toggleMobileMenu(menu){
     menu.classList.toggle('open');
 }
@@ -11,3 +10,6 @@ function myFunction() {
       x.type = "password";
     }
   }
+
+
+  

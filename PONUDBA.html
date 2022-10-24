@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja spletna stran</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <header>
+      <div id="brand"><a href="/"></a></div>
+      <nav id="navbar">
+        <img src="images/Screenshot_2022-10-24_212819-removebg-preview (1).png" class="logo">
+       <ul id="menu">
+        <li><a href="index.html">HOME</a></li> 
+        <li><a href="anketa.html">ANKETA</a></li> 
+        <li><a href="ponudba.html">PONUDBA</a></li>
+        <li><a href="profile.html">PROFILE</a></li> 
+        <li id="login"><a href="login.html">Login</a></li>
+        <li id="signup"><a href="signup.html">Signup</a></li>
+        </ul>
+    </nav>
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-menu">
+        <li><a href="index.html">HOME</a></li> 
+        <li><a href="profile.html">PROFILE</a></li> 
+        <li><a href="contact.html">CONTACTS</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li id="login"><a href="login.html">Login</a></li>
+        <li id="signup"><a href="signup.html">Signup</a>
+      </ul>
+    </div>
+    </header>
+<h4 id="Vrh"><font color="black">ist avtov:</font></h4>
+        
+     
+          <ol>
+            <li><a href="ponudba.html#Švica">Volvo XC60</a></li>
+            <li><a href="ponudba.html#Švica">Saab</a></li>
+            <li><a href="ponudba.html#Nem">Mercedes Kupe GLE</a></li>
+            <li><a href="ponudba.html#Nem">Audi</a></li>
+            <li><a href="ponudba.html#Jap">Honda</a></li>
+            <li><a href="ponudba.html#Jap">Toyota</a></li>
+         
+         </ol>
+        
+       <table border="1">
+           <thead></thead>
+           <tbody>
+               
+                <tr><td id="Švica"><h4>1. Volvo XC60 </h4><br><br> <a href="images/286425_Updated_Volvo_XC60_Recharge_Plug-in_Hybrid_T8_AWD_R-Design_Pro.jpg" target="_blank"><img width="400" height="300" src="images/286425_Updated_Volvo_XC60_Recharge_Plug-in_Hybrid_T8_AWD_R-Design_Pro.jpg"></a> <br> <hr> Tehnični podatki:<ol><li>Mehki hibrid</li><li>Manjša poraba goriva</li></ol> <br> Cena:39.990 EUR </td>
+                    <td id="Švica"><h4>2. Saab 93/Cabriolet</h4> <br> <br><a href="images/saab-93_2003_Kabriolets_1622551017_0.jpg" target="_blank"><img width="400" height="300" src="images/saab-93_2003_Kabriolets_1622551017_0.jpg"></a> <br><hr> Tehnični podatki:<ol><li>Automati</li><li>Country version: Germany</li></ol> <br> Cena:14.990 EUR</td>
+                </tr>
+                <tr>
+                    <td id="Nem"><h4>3. Marcedes Kupe GLE </h4><br> <br><a href="images/exteriorImage.MQ6.12.20211114113810.webp" target="_blank"><img width="400" height="300" src="images/exteriorImage.MQ6.12.20211114113810.webp"></a><br><hr> Tehnični podatki:<ol><li>Žarometi MULTIBEAM LED</li><li>Paket za parkiranje s 360-stopinjsko kamero</li></ol> <br> Cena:89.400 EUR</td>
+                    <td id="Nem"><h4>4. Audi A5</h4> <br><br> <a href="images/2023-audi-a5-front-exterior-1658502717.jpg" target="_blank"><img width="400" height="300" src="images/2023-audi-a5-front-exterior-1658502717.jpg"></a><br><hr> Tehnični podatki:<ol><li>ročni menjalnik</li><li>črna metalik</li></ol> <br> Cena:8.190 EUR</td>
+                </tr>
+                <tr>
+                    <td id="Jap"><h4>5. Honda CR-V</h4><br><br> <a href="images/2018_Honda_CR-V_(RW_MY18)_+Sport_2WD_wagon_(2018-10-22)_01.jpg" target="_blank"><img width="400" height="300" src="images/2018_Honda_CR-V_(RW_MY18)_+Sport_2WD_wagon_(2018-10-22)_01.jpg" ></a><br><hr> Tehnični podatki:<ol><li>bencinski motor </li><li>terensko vozilo</li></ol> <br> Cena:24.990 EUR</td>
+                    <td id="Jap"><h4>6. Toyota Corolla</h4> <br> <br> <a href="images/corolla-hb.png" target="_blank"><img width="400" height="300" src="images/corolla-hb.png" > </a><br><hr> Tehnični podatki:<ol><li>dinamična zunanjost</li><li>športni občutek</li></ol> <br> Cena:25.350 EUR</td>
+                </tr>
+           </tbody>
+       
+       </table>
+  
+       <br>
+           <h3><a href="ponudba.html#Vrh">Na vrh</a></h3>
+
+
+
+</body> 
+
+<script>
+  var navbar = document.getElementById("navbar");
+  var menu = document.getElementById("menu");
+
+window.onscroll = function(){
+  if(window.pageXOffset >= menu.offsetTop){
+    navbar.classList.add("sticky");
+  }
+  else{
+    navbar.classList.remove("sticky");
+  }
+}
+
+ </script>
+  <script src="index.js"></script>
+   </body>
+   </html>
+
